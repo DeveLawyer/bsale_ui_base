@@ -4,9 +4,16 @@
 </script>
 
 <main>
-  <h1>Bsale UI Base</h1>
+  <div class="example-title">
+    <img
+      src="/logo_bsale_web_naranjo_500x200.svg"
+      alt="logo Bsale"
+      width="200"
+    />
+    <h1>UI Base</h1>
+  </div>
 
-  <form on:submit|preventDefault>
+  <form class="example-form" on:submit|preventDefault>
     <div class="textfield-wrapper">
       <TextField id="name" label="Name" />
     </div>
@@ -19,18 +26,3 @@
     apps.
   </p>
 </main>
-
-<style>
-  form {
-    width: 500px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-
-  .textfield-wrapper {
-    width: 100%;
-  }
-</style>
