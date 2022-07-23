@@ -2,13 +2,16 @@
 
 $font-name: "Roboto";
 
-/* Colores principales */
+/* Paleta de colores */
 $bs-orange: #ff6815;
-$bs-light-blue: #09c;
-
-/* Colores secundarios */
+$bs-blue: #09c;
+$bs-light-blue: #31b9dd;
 $bs-dark-grey: #4e5865;
 $bs-light-grey: #778495;
+
+/* Colores primario y secundario */
+$bs-primary: $bs-blue;
+$bs-secondary: $bs-light-blue;
 
 /* Colores de texto */
 $text: $bs-dark-grey;

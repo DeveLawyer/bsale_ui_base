@@ -5,9 +5,9 @@ IMPORTANTE:
 **/
 
 @use "@material/theme" with (
-  $primary: #31b9dd,
+  $primary: $bs-primary,
   $on-primary: #fff,
-  $secondary: #31b9dd,
+  $secondary: $bs-secondary,
   $on-secondary: #000000,
   $error: #b00020,
   $on-error: #fff,
