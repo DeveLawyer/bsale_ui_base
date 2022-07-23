@@ -1,0 +1,39 @@
+/** 
+IMPORTANTE: 
+- Las reglas @use deben ir primero
+- Un alias al usar @use, evita conflictos entre módulos con mismo nombre 
+**/
+
+@use "@material/theme" with (
+  $primary: #31b9dd,
+  $on-primary: #fff,
+  $secondary: #31b9dd,
+  $on-secondary: #000000,
+  $error: #b00020,
+  $on-error: #fff,
+  $surface: #fff,
+  $on-surface: #000000,
+  $background: #fff
+);
+
+/** IMPORTS DE MDC **/
+
+/* MDCTextField */
+@use "@material/floating-label/mdc-floating-label";
+@use "@material/line-ripple/mdc-line-ripple";
+@use "@material/notched-outline/mdc-notched-outline";
+@use "@material/textfield";
+
+/* MDCButton */
+@use "@material/button/styles" as button;
+
+/* MDCSwitch */
+@use "@material/switch/styles" as switch;
+
+@include textfield.core-styles;
+
+/** REGLAS CUSTOM **/
+
+.mdc-text-field {
+  width: 100%;
+}
