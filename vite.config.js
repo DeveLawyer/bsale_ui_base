@@ -13,6 +13,12 @@ export default defineConfig({
           prependData: `@import 'src/styles/main.scss';`
         },
       }),
+      onwarn: (warning, handler) => {
+        const { code, _frame } = warning
+        // Omite los warning por clases no utilizadas (sucede mucho con Material)
+        if (code === "css-unused-selector") return
+        handler(warning)
+      },
     })
   ],
   resolve: {
