@@ -50,6 +50,12 @@ main {
       }
     }
   }
+
+  .api-call {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
 @media (min-width: 480px) {
