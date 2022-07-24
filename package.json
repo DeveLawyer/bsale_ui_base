@@ -1,7 +1,9 @@
 {
   "name": "bsale_ui_base",
+  "description": "Proyecto base para construcción de interfaces en Bsale",
+  "author": "Zamir Narro",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
