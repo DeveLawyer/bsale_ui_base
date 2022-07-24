@@ -1,12 +1,12 @@
-import dotenv from 'dotenv';
-dotenv.config();
+import dotenv from 'dotenv'
+dotenv.config()
 
 import { defineConfig } from 'vite'
 import { svelte } from '@sveltejs/vite-plugin-svelte'
-import sveltePreprocess from "svelte-preprocess"
-import path from "path"
+import sveltePreprocess from 'svelte-preprocess'
+import path from 'path'
 
-const { PORT = 3001 } = process.env;
+const { PORT = 3001 } = process.env
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -15,16 +15,16 @@ export default defineConfig({
       preprocess: sveltePreprocess({
         scss: {
           // Para que los componentes accedan a las variables SASS
-          prependData: `@import 'src/styles/abstracts/_variables.scss';`
+          prependData: `@import 'src/styles/abstracts/_variables.scss';`,
         },
       }),
       onwarn: (warning, handler) => {
-        const { code, _frame } = warning
+        const { code } = warning
         // Omite los warning por clases no utilizadas (sucede mucho con Material)
-        if (code === "css-unused-selector") return
+        if (code === 'css-unused-selector') return
         handler(warning)
       },
-    })
+    }),
   ],
   server: {
     proxy: {
@@ -36,7 +36,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      $lib: path.resolve("src/lib"),
+      $lib: path.resolve('src/lib'),
     },
   },
 })

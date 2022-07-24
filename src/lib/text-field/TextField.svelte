@@ -1,16 +1,16 @@
 <script>
-  import { onMount } from "svelte";
-  import { MDCTextField } from "@material/textfield";
+  import { onMount } from 'svelte'
+  import { MDCTextField } from '@material/textfield'
 
-  export let id = "";
-  export let label = "";
-  export let value = "";
+  export let id = ''
+  export let label = ''
+  export let value = ''
 
   onMount(() => {
     const textField = new MDCTextField(
-      document.querySelector(".mdc-text-field")
-    );
-  });
+      document.querySelector('.mdc-text-field')
+    )
+  })
 </script>
 
 <label class="mdc-text-field mdc-text-field--filled">

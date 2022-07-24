@@ -1,6 +1,6 @@
 :root {
-  font-family: $font-name, -apple-system, BlinkMacSystemFont, "Segoe UI", Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: $font-name, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: $text;
   font-size: $font-16;
 }
@@ -27,7 +27,7 @@ main {
       display: flex;
       justify-content: center;
       gap: 10px;
-  
+
       h1 {
         color: $bs-orange;
         font-size: $font-40;
@@ -36,7 +36,7 @@ main {
         margin: 32px 0;
       }
     }
-  
+
     .example-form {
       width: 500px;
       margin: 0 auto;
@@ -44,7 +44,7 @@ main {
       flex-direction: column;
       align-items: flex-start;
       gap: 20px;
-  
+
       .textfield-wrapper {
         width: 100%;
       }

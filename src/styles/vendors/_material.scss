@@ -4,7 +4,7 @@ IMPORTANTE:
 - Un alias al usar @use, evita conflictos entre módulos con mismo nombre 
 **/
 
-@use "@material/theme" with (
+@use '@material/theme' with (
   $primary: $bs-primary,
   $on-primary: #fff,
   $secondary: $bs-secondary,
@@ -19,16 +19,16 @@ IMPORTANTE:
 /** IMPORTS DE MDC **/
 
 /* MDCTextField */
-@use "@material/floating-label/mdc-floating-label";
-@use "@material/line-ripple/mdc-line-ripple";
-@use "@material/notched-outline/mdc-notched-outline";
-@use "@material/textfield";
+@use '@material/floating-label/mdc-floating-label';
+@use '@material/line-ripple/mdc-line-ripple';
+@use '@material/notched-outline/mdc-notched-outline';
+@use '@material/textfield';
 
 /* MDCButton */
-@use "@material/button/styles" as button;
+@use '@material/button/styles' as button;
 
 /* MDCSwitch */
-@use "@material/switch/styles" as switch;
+@use '@material/switch/styles' as switch;
 
 @include textfield.core-styles;
 

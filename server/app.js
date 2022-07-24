@@ -1,22 +1,22 @@
-const express = require('express');
-const router = require('./lib/router');
-const logger = require('morgan');
-const path = require('path');
+const express = require('express')
+const router = require('./lib/router')
+const logger = require('morgan')
+// const path = require('path')
 
-const { PORT = 3001 } = process.env;
+const { PORT = 3001 } = process.env
 
-const app = express();
+const app = express()
 
-app.use(logger('dev'));
+app.use(logger('dev'))
 
 // Middleware that parses json and looks at requests where the Content-Type header matches the type option.
-app.use(express.json());
+app.use(express.json())
 
 // Serve API requests from the router
-app.use('/api', router);
+app.use('/api', router)
 
 // Serve app production bundle
-app.use(express.static('dist'));
+app.use(express.static('dist'))
 
 // Handle client routing, return all requests to the app
 // app.get('*', (_req, res) => {
@@ -24,5 +24,5 @@ app.use(express.static('dist'));
 // });
 
 app.listen(PORT, () => {
-  console.log(`Server listening at http://localhost:${PORT}`);
-});
+  console.log(`Server listening at http://localhost:${PORT}`)
+})

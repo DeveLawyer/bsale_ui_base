@@ -1,18 +1,18 @@
 <script>
-  import { TextField, Switch, Button } from "$lib";
-  import Counter from "$lib/counter/Counter.svelte";
-  import bsaleLogo from "./assets/logo_bsale_web_naranjo_500x200.svg";
+  import { TextField, Switch, Button } from '$lib'
+  import Counter from '$lib/counter/Counter.svelte'
+  import bsaleLogo from './assets/logo_bsale_web_naranjo_500x200.svg'
 
-  let textInput = "";
+  let textInput = ''
 
   const getDataFromApi = async () => {
-    const response = await fetch("/api/example");
-    const data = await response.json();
-    console.log(`data: ${data}`);
-    return data;
-  };
+    const response = await fetch('/api/example')
+    const data = await response.json()
+    console.log(`data: ${data}`)
+    return data
+  }
 
-  let promise = getDataFromApi();
+  let promise = getDataFromApi()
 </script>
 
 <main>

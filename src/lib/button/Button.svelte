@@ -1,9 +1,9 @@
 <script>
-  import { onMount } from "svelte"
-  import { MDCRipple } from "@material/ripple"
+  import { onMount } from 'svelte'
+  import { MDCRipple } from '@material/ripple'
 
   onMount(() => {
-    const buttonRipple = new MDCRipple(document.querySelector(".mdc-button"))
+    const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'))
   })
 </script>
 
