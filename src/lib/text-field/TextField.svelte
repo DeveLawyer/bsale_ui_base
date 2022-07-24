@@ -7,9 +7,7 @@
   export let value = ''
 
   onMount(() => {
-    const textField = new MDCTextField(
-      document.querySelector('.mdc-text-field')
-    )
+    new MDCTextField(document.querySelector('.mdc-text-field'))
   })
 </script>
 

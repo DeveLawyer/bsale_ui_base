@@ -3,7 +3,7 @@
   import { MDCRipple } from '@material/ripple'
 
   onMount(() => {
-    const buttonRipple = new MDCRipple(document.querySelector('.mdc-button'))
+    new MDCRipple(document.querySelector('.mdc-button'))
   })
 </script>
 
