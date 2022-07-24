@@ -1,5 +1,5 @@
 {
-  "*.{js,svelte}": "eslint --ignore-path .gitignore --fix --cache",
+  "*.{js,svelte}": "eslint --ignore-path .gitignore --fix --cache --cache-location './node_modules/@eslint/.eslintcache/'",
   "*.scss": "stylelint --ignore-path .gitignore --fix",
   "*.{js,svelte,css,scss,html,json,md}": "prettier --ignore-path .gitignore --write"
 }
