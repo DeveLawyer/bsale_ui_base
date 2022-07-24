@@ -9,8 +9,8 @@ export default defineConfig({
     svelte({
       preprocess: sveltePreprocess({
         scss: {
-          // Para que los componentes accedan a los global de SASS (variables, etc)
-          prependData: `@import 'src/styles/main.scss';`
+          // Para que los componentes accedan a las variables SASS
+          prependData: `@import 'src/styles/abstracts/_variables.scss';`
         },
       }),
       onwarn: (warning, handler) => {
