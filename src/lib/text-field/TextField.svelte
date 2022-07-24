@@ -4,7 +4,7 @@
 
   export let id = ''
   export let label = ''
-  export let value = 'a'
+  export let value = ''
 
   onMount(() => {
     new MDCTextField(document.querySelector('.mdc-text-field'))
