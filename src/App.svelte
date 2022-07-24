@@ -1,6 +1,7 @@
 <script>
   import { TextField, Switch } from "$lib";
   import Counter from "$lib/counter/Counter.svelte";
+  import bsaleLogo from "./assets/logo_bsale_web_naranjo_500x200.svg";
 
   let textInput = "";
 </script>
@@ -8,11 +9,7 @@
 <main>
   <section class="example">
     <div class="example-title">
-      <img
-        src="/logo_bsale_web_naranjo_500x200.svg"
-        alt="logo Bsale"
-        width="200"
-      />
+      <img src={bsaleLogo} alt="logo Bsale" width="200" />
       <h1>UI Base</h1>
     </div>
 
