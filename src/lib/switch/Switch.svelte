@@ -2,18 +2,28 @@
   import { onMount } from "svelte";
   import { MDCSwitch } from "@material/switch";
 
+  export let selected = false;
+
+  let switchControl;
+
+  const toggle = () => (selected = !switchControl.selected);
+
   onMount(() => {
-    const switchControl = new MDCSwitch(document.querySelector(".mdc-switch"));
+    switchControl = new MDCSwitch(document.querySelector(".mdc-switch"));
+    selected = switchControl.selected;
   });
 </script>
 
 <div>
   <button
     id="basic-switch"
-    class="mdc-switch mdc-switch--unselected"
+    class="mdc-switch"
+    class:mdc-switch--selected={selected}
+    class:mdc-switch--unselected={!selected}
     type="button"
     role="switch"
-    aria-checked="false"
+    aria-checked={selected ? "true" : "false"}
+    on:click={toggle}
   >
     <div class="mdc-switch__track" />
     <div class="mdc-switch__handle-track">
@@ -25,5 +35,5 @@
       </div>
     </div>
   </button>
-  <label for="basic-switch">off/on</label>
+  <label for="basic-switch">{selected ? "On" : "Off"}</label>
 </div>
